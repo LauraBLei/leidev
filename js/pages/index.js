@@ -1,13 +1,14 @@
 import { makeHeader } from "../components/header.mjs";
+import { resetPage } from "../components/resetPage.mjs";
 
-const runPage = () => {
-  makeHeader();
+export const runHomePage = () => {
+  resetPage();
   makeHTML();
+  makeHeader();
 };
 
 const makeHTML = () => {
   const main = document.querySelector("main");
-  main.className = "width-100";
   const pageContainer = document.createElement("div");
   pageContainer.className =
     "flex justify-center items-center frontPageImg width-100 height-100";
@@ -39,5 +40,3 @@ const makeHTML = () => {
   pageContainer.appendChild(welcomeTextContainer);
   welcomeTextContainer.append(welcome, textOne, textTwo, textThree);
 };
-
-runPage();

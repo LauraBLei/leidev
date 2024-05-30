@@ -15,8 +15,19 @@ body {
   width: 100vw;
 }
 
+main {
+  width: 100%;
+  height: 100%;
+}
+
 .frontPageImg {
   background: url(/public/pictures/andrew-ridley-jR4Zf-riEjI-unsplash.jpg)
+    no-repeat;
+  background-size: cover;
+}
+
+.boardImage {
+  background: url(/public/pictures/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg)
     no-repeat;
   background-size: cover;
 }
