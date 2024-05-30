@@ -1,0 +1,112 @@
+/* Display Flex */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
+/* Placement */
+
+.width-100 {
+  width: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.mx-50 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/*   Colors  */
+
+.black {
+  color: var(--black);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.white {
+  color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+/* Font */
+
+.font-pangolin {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-comic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-60 {
+  font-size: 60px;
+}
+
+.font-50 {
+  font-size: 50px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.font-25 {
+  font-size: 25px;
+}
+
+/* Styling */
+
+.style-none {
+  text-decoration: none;
+}
+
+.shadow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

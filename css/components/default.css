@@ -1,0 +1,22 @@
+:root {
+  --blue: #5d8ea4;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.frontPageImg {
+  background: url(/public/pictures/andrew-ridley-jR4Zf-riEjI-unsplash.jpg)
+    no-repeat;
+  background-size: cover;
+}
