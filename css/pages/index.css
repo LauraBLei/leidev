@@ -1,5 +1,19 @@
-.welcomeTextContainer {
-  width: 40vw;
-  height: auto;
-  padding: 50px;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  max-width: 1000px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 30px;
 }
