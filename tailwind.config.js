@@ -9,6 +9,7 @@ module.exports = {
       },
       colors: {
         logoBlue: "#5D8EA4",
+        white: "#FFFFFF",
       },
       fontFamily: {
         quote: ["La Belle Aurore", `cursive`],

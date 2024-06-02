@@ -12,7 +12,7 @@ const makeHTML = () => {
 
   const sectionOne = document.createElement("section");
   sectionOne.className =
-    "relative bg-colorBg flex w-full flex justify-center items-center shadow-regular";
+    "relative bg-colorBg flex w-full flex justify-center items-center shadow-regular h-[330px]";
 
   const overlay = document.createElement("div");
   overlay.className =
@@ -25,29 +25,33 @@ const makeHTML = () => {
   const meImg = document.createElement("img");
   meImg.src = "public/pictures/me.png";
   meImg.alt = "Image of the front end developer Laura Lei";
-  meImg.className = "z-10";
+  meImg.className = "z-10 place-self-end";
 
   const ourCode = document.createElement("h1");
   ourCode.innerText = "Our Code";
   ourCode.className = "font-Karla text-6xl z-10";
 
   const sectionTwo = document.createElement("section");
-  sectionTwo.className = "relative flex flex-col justify-center";
+  sectionTwo.className =
+    "relative flex flex-col justify-center overflow-hidden h-full shadow-regular";
 
   const logoStamp = document.createElement("img");
   logoStamp.src = "public/logo/logoStamp.png";
-  logoStamp.className = "absolute";
+  logoStamp.className =
+    "absolute place-self-end pointer-events-none z-0 top-0 end-0";
 
   const headline = document.createElement("h1");
   headline.innerText = "I'm Laura Lei";
-  headline.className = "font-Title text-7xl text-logoBlue font-semibold";
+  headline.className =
+    "font-Title text-7xl text-logoBlue font-semibold mt-10 ml-10 z-10";
 
   const text = document.createElement("div");
+  text.className = "z-10 ml-10";
   text.innerHTML = `
-      <p>Frontend developer, based in Bergen, Norway</p>
-      <p>Thank you for visiting my portfolio, and I hope you enjoy exploring my work as much as I enjoy creating it!</p>
-      <p>take a look at my <button>Projects</button>, and get to know a bit more <button>About</button> me!</p>
-      <p>Download my <button>Resume</button> or <button>contact</button> me.</p>
+      <p class="font-Karla text-4xl my-10">Frontend developer, based in Bergen, Norway</p>
+      <p class="font-Karla text-4xl my-10 max-w-[785px]"> Thank you for visiting my portfolio, and I hope you enjoy exploring my work as much as I enjoy creating it! </p>
+      <p class="font-Karla text-4xl my-10">take a look at my <a href="#/projects/index.html" class="blue-button">Projects</a>, and get to know a bit more <a href="#/about/index.html" class="blue-button">About</a> me!</p>
+      <p class="font-Karla text-4xl my-10">Download my <button id="resume-button" class="blue-button">Resume</button> or <button id="contact-button" class="blue-button">contact</button> me.</p>
   `;
 
   main.append(sectionOne, sectionTwo);

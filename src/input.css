@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .blue-button {
+    @apply bg-logoBlue
+        text-white
+        shadow-regular
+        text-4xl
+        font-Karla
+        rounded-md
+        py-1
+        px-2.5;
+  }
+  .white-button {
+    @apply bg-white
+        shadow-regular
+        text-4xl
+        font-Karla
+        rounded-md
+        py-1
+        px-2.5;
+  }
+}
