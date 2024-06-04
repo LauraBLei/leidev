@@ -1,5 +1,6 @@
 import { runAboutPage } from "../pages/about.js";
 import { runHomePage } from "../pages/index.js";
+import { runProjectPage } from "../pages/project.js";
 import { runProjectsPage } from "../pages/projects.js";
 
 export function router() {
@@ -11,7 +12,7 @@ export function router() {
     { path: /^\/(index.html)?$/, controller: runHomePage },
     { path: /^\/projects(\/index.html)?$/, controller: runProjectsPage },
     { path: /^\/about(\/index.html)?$/, controller: runAboutPage },
-    // { path: /^\/Project(\/index.html)?$/, controller: runAboutPage },
+    { path: /^\/project(\/index.html)?$/, controller: runProjectPage },
 
     { path: /.*/, controller: runHomePage },
   ];

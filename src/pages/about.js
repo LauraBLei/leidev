@@ -1,6 +1,6 @@
 import { makeHeader } from "../components/header.mjs";
 import { resetPage } from "../components/resetPage.mjs";
-import { webTools } from "../components/webTools.mjs";
+import { webTools } from "../components/arrays.mjs";
 
 export const runAboutPage = () => {
   resetPage();
