@@ -1,4 +1,4 @@
-import { router } from "./js/components/router.mjs";
+import { router } from "./src/components/router.mjs";
 
 const start = () => {
   router();

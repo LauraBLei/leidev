@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .blue-button {
+    @apply bg-logoBlue
+        text-white
+        shadow-regular
+        text-2xl
+        md:text-4xl
+        font-Karla
+        rounded-md
+        py-1
+        px-2.5;
+  }
+  .white-button {
+    @apply bg-white
+        shadow-regular
+        text-2xl 
+        md:text-4xl
+        font-Karla
+        rounded-md
+        py-1
+        text-logoBlue
+        px-2.5;
+  }
+
+  .dot {
+    @apply h-[10px] 
+    w-[10px] 
+    mx-[2px]
+     bg-logoBlue 
+     rounded-full;
+  }
+
+  .active {
+    @apply bg-white
+    h-[12px]
+    w-[12px];
+  }
+}
