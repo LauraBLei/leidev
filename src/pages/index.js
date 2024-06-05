@@ -20,7 +20,7 @@ const makeHTML = () => {
 
   const yourVision = document.createElement("h1");
   yourVision.innerText = "Your Vision";
-  yourVision.className = "font-Karla text-6xl z-10";
+  yourVision.className = "font-Karla text-4xl z-10 text-nowrap font-bold";
 
   const meImg = document.createElement("img");
   meImg.src = "public/pictures/me.png";
@@ -29,7 +29,7 @@ const makeHTML = () => {
 
   const ourCode = document.createElement("h1");
   ourCode.innerText = "Our Code";
-  ourCode.className = "font-Karla text-6xl z-10";
+  ourCode.className = "font-Karla text-4xl z-10 text-nowrap font-bold";
 
   const sectionTwo = document.createElement("section");
   sectionTwo.className =
@@ -51,7 +51,6 @@ const makeHTML = () => {
       <p class="font-Karla text-4xl my-10">Frontend developer, based in Bergen, Norway</p>
       <p class="font-Karla text-4xl my-10 max-w-[785px]"> Thank you for visiting my portfolio, and I hope you enjoy exploring my work as much as I enjoy creating it! </p>
       <p class="font-Karla text-4xl my-10">take a look at my <a href="#/projects/index.html" class="blue-button">Projects</a>, and get to know a bit more <a href="#/about/index.html" class="blue-button">About</a> me!</p>
-      <p class="font-Karla text-4xl my-10">Download my <button id="resume-button" class="blue-button">Resume</button> or <button id="contact-button" class="blue-button">contact</button> me.</p>
   `;
 
   main.append(sectionOne, sectionTwo);
