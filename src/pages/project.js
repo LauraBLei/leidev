@@ -19,22 +19,25 @@ const makeHTML = () => {
 
   const h1 = document.createElement("h1");
   h1.textContent = project.title;
-  h1.className = "font-Title text-7xl text-logoBlue font-semibold mb-[50px]";
+  h1.className =
+    "font-Title text-7xl text-logoBlue font-semibold mb-[50px] text-center";
 
   const contentDiv = document.createElement("div");
-  contentDiv.className = "flex justify-center";
+  contentDiv.className = "flex justify-center gap-10 flex-wrap";
 
   const sectionOne = document.createElement("div");
+  sectionOne.className = "max-w-[600px]";
 
   const sideBar = document.createElement("div");
   sideBar.className =
-    "bg-logoBlue shadow-rightBox flex flex-col items-center p-8";
+    "bg-logoBlue shadow-rightBox flex flex-col items-center justify-evenly p-8";
 
   const imageCarousel = document.createElement("div");
   imageCarousel.className = "relative flex items-center";
 
   const text = document.createElement("p");
   text.innerText = project.text;
+  text.className = "font-Karla text-2xl my-6";
 
   const toolsDiv = document.createElement("div");
   toolsDiv.className = "my-6";
@@ -57,6 +60,9 @@ const makeHTML = () => {
   completionDate.className =
     "font-Karla text-xl text-white font-semibold text-center my-4";
 
+  const buttonDiv = document.createElement("div");
+  buttonDiv.className = "flex flex-col items-center";
+
   const visitLivePages = document.createElement("a");
   visitLivePages.href = project.link.website;
   visitLivePages.target = "_blank";
@@ -73,7 +79,8 @@ const makeHTML = () => {
   pageDiv.append(h1, contentDiv);
   contentDiv.append(sectionOne, sideBar);
   sectionOne.append(imageCarousel, text);
-  sideBar.append(toolsDiv, completionDateDiv, visitLivePages, visitRepo);
+  sideBar.append(toolsDiv, completionDateDiv, buttonDiv);
+  buttonDiv.append(visitLivePages, visitRepo);
   toolsDiv.append(toolsTitle, tools);
   completionDateDiv.append(completionDateTitle, completionDate);
 
@@ -102,11 +109,11 @@ const makeCarousel = (project, carouselDiv) => {
   console.log(images);
 
   const leftBtn = document.createElement("p");
-  leftBtn.className = "prevBtn absolute z-10 mx-[50px] text-6xl";
+  leftBtn.className = "prevBtn absolute z-10 mx-[15px] text-6xl";
   leftBtn.innerHTML = `<i class="fa-solid fa-caret-left" style="color: #ffffff;"></i>`;
 
   const rightBtn = document.createElement("p");
-  rightBtn.className = "nextBtn absolute z-10 mx-[50px] right-0 text-6xl";
+  rightBtn.className = "nextBtn absolute z-10 mx-[15px] right-0 text-6xl";
   rightBtn.innerHTML = `<i class="fa-solid fa-caret-right" style="color: #ffffff;"></i>`;
 
   const carouselImgs = document.createElement("div");
@@ -116,11 +123,12 @@ const makeCarousel = (project, carouselDiv) => {
 
   images.forEach((element) => {
     const carouselBox = document.createElement("div");
-    carouselBox.className = "carouselBox";
+    carouselBox.className = "carouselBox h-auto w-[600px] h-[280px]";
 
     const image = document.createElement("img");
     image.src = element;
     image.alt = "image of the Project";
+    image.className = "h-full w-full object-cover";
 
     carouselBox.appendChild(image);
     carouselImgs.appendChild(carouselBox);

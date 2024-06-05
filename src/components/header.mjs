@@ -38,7 +38,7 @@ const makeHTML = () => {
 
   const contactDiv = document.createElement("div");
   contactDiv.className =
-    "z-20 absolute bg-logoBlue text-white w-full left-0 flex justify-center items-center gap-9 h-[150px] text-2xl font-Karla mt-[35px] shadow-regular";
+    "z-40 absolute bg-logoBlue text-white w-full left-0 flex justify-center items-center gap-9 h-[150px] text-2xl font-Karla mt-[35px] shadow-regular";
 
   const emailDiv = document.createElement("div");
   emailDiv.className = "flex gap-3";
