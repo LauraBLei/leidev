@@ -16,13 +16,14 @@ const makeHTML = () => {
     "flex flex-col items-center w-full h-full mt-[50px] min-h-screen";
 
   const h1 = document.createElement("h1");
-  h1.className = "font-Title text-7xl font-semibold text-logoBlue";
+  h1.className = "font-Title text-4xl md:text-7xl font-semibold text-logoBlue";
   h1.innerHTML = `Projects <i class="fa-solid fa-user-group" style="color: #5D8EA4;"></i> `;
 
   const folderDiv = document.createElement("div");
   folderDiv.className = "w-full h-full mt-[50px]";
 
   const subjectDiv = document.createElement("div");
+  subjectDiv.className = "max-w-44 md:max-w-80";
 
   const projectDiv = document.createElement("div");
   projectDiv.className =
@@ -31,7 +32,7 @@ const makeHTML = () => {
   const noroffProjectTitle = document.createElement("h2");
   noroffProjectTitle.innerText = "Noroff Projects";
   noroffProjectTitle.className =
-    "font-Karla text-3xl p-2 bg-logoBlue max-w-[375px] text-white text-center rounded-t-md h-full";
+    "font-Karla text-2xl md:text-3xl p-2 bg-logoBlue text-white text-center rounded-t-md h-full text-nowrap";
 
   const projects = makeNoroffProjects();
 
@@ -46,7 +47,7 @@ const makeNoroffProjects = () => {
   const allProjects = noroffProjects;
 
   const div = document.createElement("div");
-  div.className = "flex flex-wrap gap-8 my-[100px]";
+  div.className = "flex flex-wrap gap-8 my-[100px] justify-center";
 
   allProjects.forEach((project) => {
     const projectDiv = document.createElement("div");
