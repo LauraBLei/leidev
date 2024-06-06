@@ -48,7 +48,7 @@ const makeHTML = () => {
     "font-Title text-5xl text-logoBlue font-semibold mt-10 ml-10 z-10 md:text-7xl";
 
   const text = document.createElement("div");
-  text.className = "z-10 ml-10";
+  text.className = "z-10 ml-10 mb-4";
   text.innerHTML = `
       <p class="font-Karla text-3xl md:text-4xl my-10">Frontend developer, based in Bergen, Norway</p>
       <p class="font-Karla text-3xl  md:text-4xl my-10 max-w-[785px]"> Thank you for visiting my portfolio, and I hope you enjoy exploring my work as much as I enjoy creating it! </p>
