@@ -1,4 +1,4 @@
-name: CI 
+name: Build
 
 on: 
   push:
@@ -10,8 +10,8 @@ on:
     workflow_dispatch:
 jobs:
   steps: 
-  -name: install node package
-  -run: npm install
+    -name: install node package
+      run: npm install
 
-  -name: Build
-  -run: npm run build
+  -name: build Tailwind
+    run: npm run build
