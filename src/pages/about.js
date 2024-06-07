@@ -49,7 +49,7 @@ const makeHTML = () => {
 
   const quoteText = document.createElement("p");
   quoteText.className = "text-2xl md:text-3xl font-Karla";
-  quoteText.innerText = `My late father always said, " The will to want creates the ability to act. " This philosophy has guided my career, driving me to master new skills, lead projects, and overcome challenges with determination. My strong work ethic and commitment to achieving goals make me a valuable asset, ready to contribute passionately to your team.`;
+  quoteText.innerText = `This quote reminded me of my late father. His philosophy has guided my career, driving me to master new skills, lead projects, and overcome challenges. My strong work ethic and commitment to achieving goals make me a valuable asset, ready to contribute passionately to your team`;
 
   main.appendChild(pageContainer);
   pageContainer.append(aboutContainer, quoteContainer);
