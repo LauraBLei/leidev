@@ -48,7 +48,7 @@ const makeHTML = () => {
   emailText.innerText = "Email: ";
 
   const email = document.createElement("p");
-  email.innerText = "leiDev@email.com";
+  email.innerText = "lei.Dev@outlook.com";
 
   const github = document.createElement("a");
   github.innerHTML = `<i class="fa-brands fa-square-github fa-xl cursor-pointer" style="color: #ffffff;"></i>`;
