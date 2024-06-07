@@ -1,13 +1,17 @@
 name: Build
 on:
-push:
-branches: ["main"]
-pull_request:
-branches: ["main"]
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 jobs:
-steps:
--name: install node package
-run: npm install
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install node package
+        run: npm install
+      - name: build tailwind
+        run: npm run build
 
--name: build tailwind
-run: npm run build
+
+      
