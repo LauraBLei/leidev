@@ -1,17 +1,13 @@
 name: Build
-
-on: 
-  push:
-    branches: ["main"]
-    
-  pull_request:
-    branches: ["main"]
-
-    workflow_dispatch:
+on:
+push:
+branches: ["main"]
+pull_request:
+branches: ["main"]
 jobs:
-  steps: 
-    -name: install node package
-      run: npm install
+steps:
+-name: install node package
+run: npm install
 
-  -name: build Tailwind
-    run: npm run build
+-name: build tailwind
+run: npm run build
