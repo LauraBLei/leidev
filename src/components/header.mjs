@@ -110,7 +110,7 @@ const makePhoneHTML = () => {
   emailText.innerText = "Email: ";
 
   const email = document.createElement("p");
-  email.innerText = "leiDev@email.com";
+  email.innerText = "lei.dev@outlook.com";
 
   const github = document.createElement("a");
   github.className = " mx-6";
