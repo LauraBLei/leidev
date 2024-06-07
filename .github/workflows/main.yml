@@ -2,16 +2,9 @@ name: Build
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
 jobs:
   install:
     runs-on: ubuntu-latest
     steps:
-      - name: install node package
-        run: npm install
       - name: build tailwind
         run: npm run build
-
-
-      
