@@ -52,7 +52,7 @@ const makeHTML = () => {
   text.innerHTML = `
       <p class="font-Karla text-3xl md:text-4xl my-10">Frontend developer, based in Bergen, Norway</p>
       <p class="font-Karla text-3xl  md:text-4xl my-10 max-w-[785px]"> Thank you for visiting my portfolio, and I hope you enjoy exploring my work as much as I enjoy creating it! </p>
-      <p class=" font-Karla text-3xl  md:text-4xl my-10">take a look at my <a href="#/projects/index.html" class="blue-button  bg-logoBlue text-white shadow-regular text-2xl md:text-4xl font-Karla rounded-md py-1 px-2.5 ">Projects</a>, and get to know a bit more <a href="#/about/index.html" class="blue-button">About</a> me!</p>
+      <p class=" font-Karla text-3xl  md:text-4xl my-10">take a look at my <a href="#/projects/index.html" class="blue-button">Projects</a>, and get to know a bit more <a href="#/about/index.html" class="blue-button">About</a> me!</p>
   `;
 
   main.append(sectionOne, sectionTwo);
