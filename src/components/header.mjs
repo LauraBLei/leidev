@@ -9,7 +9,10 @@ const makeHTML = () => {
   const logo = document.createElement("img");
   logo.src = "public/logo/logo1.png";
   logo.alt = "Lei Dev Logo";
-  logo.className = "max-h-[109px]";
+  logo.className = "max-h-[109px] cursor-pointer";
+  logo.addEventListener("click", () => {
+    window.location.href = "#/";
+  });
 
   const nav = document.createElement("nav");
   nav.className = "hidden lg:flex";

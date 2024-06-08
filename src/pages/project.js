@@ -20,13 +20,13 @@ const makeHTML = () => {
   const h1 = document.createElement("h1");
   h1.textContent = project.title;
   h1.className =
-    "font-Title text-7xl text-logoBlue font-semibold mb-[50px] text-center";
+    "font-Title text-4xl md:text-7xl text-logoBlue font-semibold mb-[50px] text-center";
 
   const contentDiv = document.createElement("div");
-  contentDiv.className = "flex justify-center gap-10 flex-wrap";
+  contentDiv.className = "flex justify-center gap-10 flex-wrap ";
 
   const sectionOne = document.createElement("div");
-  sectionOne.className = "max-w-[600px]";
+  sectionOne.className = " w-full md:w-[600px]";
 
   const sideBar = document.createElement("div");
   sideBar.className =
@@ -37,7 +37,7 @@ const makeHTML = () => {
 
   const text = document.createElement("p");
   text.innerText = project.text;
-  text.className = "font-Karla text-2xl my-6";
+  text.className = "font-Karla text-xl px-6 md:p-0 md:text-2xl my-6";
 
   const toolsDiv = document.createElement("div");
   toolsDiv.className = "my-6";
@@ -119,11 +119,11 @@ const makeCarousel = (project, carouselDiv) => {
   const carouselImgs = document.createElement("div");
   carouselImgs.className = "max-w-[1000px]";
 
-  carouselDiv.append(leftBtn, rightBtn, carouselImgs);
+  carouselDiv.append(carouselImgs, rightBtn, leftBtn);
 
   images.forEach((element) => {
     const carouselBox = document.createElement("div");
-    carouselBox.className = "carouselBox h-auto w-[600px] h-[280px]";
+    carouselBox.className = "carouselBox h-auto w-full h-[280px]";
 
     const image = document.createElement("img");
     image.src = element;
