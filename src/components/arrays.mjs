@@ -5,7 +5,8 @@ export const webTools = [
   "Figma",
   "Javascript",
   "VS-Code",
-  "Github",
+  "Github", 
+  "React",
 ];
 
 export const noroffProjects = [
