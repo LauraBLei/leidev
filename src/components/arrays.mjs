@@ -3,7 +3,7 @@ export const webTools = [
   "CSS",
   "HTML",
   "Figma",
-  "Javascript",
+  "Javascript/Typescript",
   "VS-Code",
   "Github", 
   "React",
